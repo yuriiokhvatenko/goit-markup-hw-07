@@ -396,7 +396,6 @@ color: #FFFFFF;
   gap: 30px;
 }
 
-
 .team__card {
   text-align: center;
   border-radius: 0px 0px 4px 4px;
@@ -453,27 +452,26 @@ color: #FFFFFF;
 .team__social-link {
   width: 44px;
   height: 44px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
-  color: var(--social-link-notactive);
-  fill: currentColor;
   border-radius: 50%;
   transition: background-color var(--primary-duration) var(--primary-ttf),
   fill var(--primary-duration) var(--primary-ttf);
 }
 
-
-
-
+.team__social-link--grey-notactive {
+  color: var(--social-link-notactive);
+  fill: currentColor;
+}
 
 .team__social-link:hover, 
 .team__social-link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-bcg-color);
 }
+
+/* Team end */
 
 /* Clients */
 
