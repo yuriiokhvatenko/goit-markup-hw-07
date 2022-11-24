@@ -106,6 +106,7 @@ a {
 }
 
 .logo {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -488,7 +489,6 @@ color: #FFFFFF;
   height: 92px;
   border: 1px solid currentColor;
   border-radius: 4px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -508,38 +508,77 @@ color: #FFFFFF;
 }
 
 
-/* Footer */
-.footer-blocks {
-  display: flex;
-  align-items: baseline;
-}
+/* 
 
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--hero-footer-color);
-}
-.footer-nav-block {
-  margin-right: 70px;
-}
-
-.logo-footer {
-  display: inline-block;
-  margin-bottom: 20px;
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
 }
-.logo-first-footer {
+
+.logo--padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.logo--blue {
   color: var(--accent-color);
 }
-.logo-last-footer {
+
+.logo--black {
+  color: var(--primary-text-color);
+}
+
+*/
+
+
+/* Footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer--bgc-dark-grey {
+  background-color: var(--hero-footer-color);
+}
+
+.footer__blocks {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__nav-block--mr {
+  margin-right: 70px;
+}
+
+.logo {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+
+.logo--mb {
+  margin-bottom: 20px;
+}
+
+.logo--blue {
+  color: var(--accent-color);
+}
+
+.logo--white {
   color: #ffffff;
 }
 /* Adress */
-.adress {
+.footer__adress {
   display: inline-block;
   font-style: normal;
   font-weight: 400;
@@ -550,17 +589,12 @@ color: #FFFFFF;
   transition: color var(--primary-duration) var(--primary-ttf);
   
 }
-.adress-list:not(:last-child) {
+.footer__adress-list:not(:last-child) {
   margin-bottom: 9px;
 }
-/* 
-.footer .adress:hover,
-.footer .adress:focus {
-  color: red;
-} */
 
-.footer .link:hover,
-.footer .link:focus {
+.footer__adress:hover,
+.footer__adress:focus {
   color: var(--accent-color);
 }
 
