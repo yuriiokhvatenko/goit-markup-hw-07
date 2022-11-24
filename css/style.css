@@ -25,6 +25,7 @@ body {
   font-family: var(--primary-font);
 
 }
+
 h1,
 h2,
 h3,
@@ -35,27 +36,37 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .link {
   text-decoration: none;
 }
+
+.image {
+  display: block;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--primary-bcg-color);
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -76,6 +87,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .section__title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -85,6 +97,7 @@ a {
   letter-spacing: 0.03em;
   
 }
+
 /* Header */
 /* Logo  start*/
 
@@ -334,6 +347,10 @@ a {
   gap: 30px;
 }
 
+.projects__image {
+  display: block;
+}
+
 .projects__img-block {
   position: relative;
 }
@@ -367,22 +384,20 @@ color: #FFFFFF;
 
 /* Projects end */
 
-/* Team */
-.section.team {
+/* Team start */
+.team--bcg-ghost-white {
   background-color: var(--bcg-color-team);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
-.projects__image {
-  display: block;
-}
-.team-list {
+
+.team__list {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc((100% - 30px * 3) / 4);
   gap: 30px;
 }
-.team .card {
+
+
+.team__card {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
