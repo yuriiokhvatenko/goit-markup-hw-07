@@ -76,7 +76,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 }
-.section-title {
+.section__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -321,30 +321,24 @@ a {
 /* Finish features */
 
 
-/* Projects */
-.section.projects {
+/* Projects start*/
+
+.projects--pt {
   padding-top: 0;
 }
 
-.projects-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.projects-list {
+.projects__list {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc((100% - 30px * 2) / 3);
   gap: 30px;
 }
-.projects-img-block {
+
+.projects__img-block {
   position: relative;
 }
 
-.projects-descr-block {
+.projects__descr-block {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -352,20 +346,26 @@ a {
   height: 70px;
   padding-top: 27px;
   padding-bottom: 27px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8))
 }
-.projects-descr {
 
+.projects__descr-block--bgi-gradient {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+}
+
+.projects__description {
 font-weight: 700;
 font-size: 14px;
 line-height: calc(16 / 14);
 text-align: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-
-
-color: #FFFFFF;
 }
+
+.projects__description--white {
+color: #FFFFFF; 
+}
+
+/* Projects end */
 
 /* Team */
 .section.team {
@@ -373,7 +373,7 @@ color: #FFFFFF;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.img_block {
+.projects__image {
   display: block;
 }
 .team-list {
