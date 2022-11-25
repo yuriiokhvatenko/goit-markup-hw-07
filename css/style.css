@@ -717,17 +717,20 @@ color: #FFFFFF;
 /* footer end */
 
 /* Portfolio */
-/* Buttons */
-.buttons-portfolio {
+/* Buttons  start*/
+.portfolio__button-list {
   gap: 8px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
+}
+
+.portfolio__button-list--mb {
   margin-bottom: 50px;
 }
 
-.btn-portfolio {
+.portfolio__btn {
   padding: 6px 22px;
   display: block;
   font-family: "Roboto", sans-serif;
@@ -744,44 +747,43 @@ color: #FFFFFF;
   transition: background-color var(--primary-duration) var(--primary-ttf),
   color var(--primary-duration) var(--primary-ttf);
 }
-.btn-portfolio:hover,
-.btn-portfolio:focus {
+
+.portfolio__btn:hover,
+.portfolio__btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
+
+/* buttons end */
+
 /* Portfolio list */
-.portfolio-list {
+.portfolio__grid {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc((100% - 30px * 2) / 3);
   gap: 30px;
 }
 
-
-.portfolio-card {
-  border: 1px solid #eeeeee;
-  border-top: none;
-  padding: 20px 24px;
-}
-
-.portfolio-ellement {
+.portfolio__ellement {
   transition: box-shadow var(--primary-duration) var(--primary-ttf);
 }
 
-.portfilio-element-block {
+.portfilio__ellement-block {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-ellement:hover,
-.portfolio-ellement:focus {
+.portfolio__ellement:hover,
+.portfolio__ellement:focus {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio-ellement:hover .overlay{
+
+.portfolio__ellement:hover .portfolio__overlay{
   transform: translate(0%, 0%);
   opacity: 1;
 }
-.overlay {
+
+.portfolio__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -794,7 +796,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
   opacity var(--primary-duration) var(--primary-ttf);
 }
 
-.overlay-text {
+.portfolio__overlay-text {
   padding-top: 63px;
   padding-right: 24px;
   padding-bottom: 63px;
@@ -806,16 +808,25 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
   color: #ffffff;
 }
 
+.portfolio__card {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
 
-.portfolio-title {
-  margin-bottom: 4px;
+.portfolio__title {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
-.portfolio-text {
+
+.portfolio__title--mb {
+  margin-bottom: 4px;
+}
+
+.portfolio__text {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
