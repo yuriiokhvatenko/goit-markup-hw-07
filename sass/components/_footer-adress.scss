@@ -1,0 +1,22 @@
+.footer__adress {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    transition: color var(--primary-duration) var(--primary-ttf);
+
+    &--grey {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:hover, &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.footer__adress-list:not(:last-child) {
+    margin-bottom: 9px;
+}
