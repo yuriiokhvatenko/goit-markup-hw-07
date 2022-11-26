@@ -1,1 +1,15 @@
-@import './utlis/vars'
+// Base
+@import './base/reset';
+@import './base/section';
+@import './base/generals';
+
+// Components
+@import './components/header-logo';
+@import './components/header-nav-list';
+@import './components/header-nav-contact';
+
+
+// Utils
+@import './utlis/variables.scss';
+@import './utlis/variables-transition';
+@import './utlis/v-hidden';
