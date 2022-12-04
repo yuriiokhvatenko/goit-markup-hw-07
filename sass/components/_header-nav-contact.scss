@@ -1,0 +1,26 @@
+.nav__contact {
+    display: flex;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+
+    &--mla {
+        margin-left: auto;
+    }
+
+    &-icon {
+        fill: currentColor;
+    }
+
+    &-icon--mr {
+        margin-right: 10px;
+    }
+}
+
+.nav__contact .nav__item+.nav__item {
+    margin-left: 50px;
+}
+

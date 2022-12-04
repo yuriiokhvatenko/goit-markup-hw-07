@@ -1,0 +1,29 @@
+// Base
+@import './base/reset';
+@import './base/section';
+@import './base/generals';
+
+// Components
+@import './components/header-logo';
+@import './components/header-nav-list';
+@import './components/header-nav-contact';
+@import './components/hero';
+@import './components/features';
+@import './components/projects';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/footer-logo';
+@import './components/footer-adress';
+@import './components/footer-social-links';
+@import './components/footer-subscribe';
+@import './components/portfolio-btns-block';
+@import './components/portfolio-grid';
+@import './components/modal';
+
+
+// Utils
+@import './utlis/variables.scss';
+@import './utlis/variables-transition';
+@import './utlis/v-hidden';
+@import './utlis/backdrop';

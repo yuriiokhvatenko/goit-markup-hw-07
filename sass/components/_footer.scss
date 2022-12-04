@@ -1,0 +1,17 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &--bgc-dark-grey {
+        background-color: var(--hero-footer-color);
+    }
+}
+
+.footer__blocks {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__nav-block--mr {
+    margin-right: 70px;
+}
